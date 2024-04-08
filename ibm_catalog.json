@@ -1,87 +1,87 @@
 {
-	"products": [
-	  {
-			"name": "my-da",
-			"label": "My DA",
-			"product_kind": "solution",
-			"version": "0.0.1",
-			"tags": [
-				"network_vpc",
-				"Technology"
-			],
-			"keywords": [
-				"vpc"
-			],
-			"short_description": "A simple deployable architecture",
-			"long_description": "A simple deployable architecture to use as a starting point and test things around.",
-			"offering_docs_url": "https://raw.githubusercontent.com/{owner}/{repoName}/{branchName}/README.md",
-			"support_details": "This is a demonstration and no official support is given.",
-			"flavors": [
-				{
-					"label": "Standard",
-					"name": "my-da",
-					"install_type": "fullstack",
-					"working_directory": "./",
-					"licenses": [
-						{
-							"name": "Apache License 2.0",
-							"url": "https://raw.githubusercontent.com/{owner}/{repoName}/{branchName}/LICENSE"
-						}
-					],
-					"configuration": [
-						{
-							"key": "prefix",
-							"required": false
-						}
-					],
-					"outputs": [
-						{
-							"key": "vpc_id"
-						}
-					],
-					"compliance": {
-						"authority": "scc-v3",
-						"controls": [
-							{
-								"profile": {
-								"name": "IBM Cloud for Financial Services",
-								"version": "1.4.0"
-								},
-								"names": [
-								"SA-4(b)"
-								]
-							}
-						]
-					},
-					"iam_permissions": [
-						{
-							"service_name": "iam-groups",
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::role:Administrator"
-							]
-						},
-						{
-							"service_name": "is.vpc",
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::role:Administrator"
-							]
-						}
-					],
-					"release_notes_url": "https://raw.githubusercontent.com/{owner}/{repoName}/{branchName}/CHANGELOG.md",
-					"architecture": {
-						"diagrams": [
-						{
-							"diagram": {
-							"caption": "Architecture diagram",
-							"url": "https://raw.githubusercontent.com/{owner}/{repoName}/{branchName}/placeholder-arch-diagram.svg",
-							"metadata": []
-							},
-							"description": "A simple deployable architecture."
-						}
-						]
-					}
-				}
-			]
-	  }
-	]
+  "products": [
+    {
+      "name": "my-da",
+      "label": "My DA",
+      "product_kind": "solution",
+      "version": "0.0.1",
+      "tags": [
+        "network_vpc",
+        "Technology"
+      ],
+      "keywords": [
+        "vpc"
+      ],
+      "short_description": "A simple deployable architecture",
+      "long_description": "A simple deployable architecture to use as a starting point and test things around.",
+      "offering_docs_url": "https://raw.githubusercontent.com/jtpape/my_da/dev/my-da_0.0.1/README.md",
+      "support_details": "This is a demonstration and no official support is given.",
+      "flavors": [
+        {
+          "label": "Standard",
+          "name": "my-da",
+          "install_type": "fullstack",
+          "working_directory": "./",
+          "licenses": [
+            {
+              "name": "Apache License 2.0",
+              "url": "https://raw.githubusercontent.com/jtpape/my_da/dev/my-da_0.0.1/LICENSE"
+            }
+          ],
+          "configuration": [
+            {
+              "key": "prefix",
+              "required": false
+            }
+          ],
+          "outputs": [
+            {
+              "key": "vpc_id"
+            }
+          ],
+          "compliance": {
+            "authority": "scc-v3",
+            "controls": [
+              {
+                "profile": {
+                  "name": "IBM Cloud for Financial Services",
+                  "version": "1.4.0"
+                },
+                "names": [
+                  "SA-4(b)"
+                ]
+              }
+            ]
+          },
+          "iam_permissions": [
+            {
+              "service_name": "iam-groups",
+              "role_crns": [
+                "crn:v1:bluemix:public:iam::::role:Administrator"
+              ]
+            },
+            {
+              "service_name": "is.vpc",
+              "role_crns": [
+                "crn:v1:bluemix:public:iam::::role:Administrator"
+              ]
+            }
+          ],
+          "release_notes_url": "https://raw.githubusercontent.com/jtpape/my_da/dev/my-da_0.0.1/CHANGELOG.md",
+          "architecture": {
+            "diagrams": [
+              {
+                "diagram": {
+                  "caption": "Architecture diagram",
+                  "url": "https://raw.githubusercontent.com/jtpape/my_da/dev/my-da_0.0.1/placeholder-arch-diagram.svg",
+                  "metadata": []
+                },
+                "description": "A simple deployable architecture."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }
