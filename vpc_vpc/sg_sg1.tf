@@ -21,7 +21,7 @@ resource "ibm_is_security_group_rule" "vpc_vpc_sg1_sg_rule_all_in" {
 
 resource "ibm_is_security_group_rule" "vpc_vpc_sg1_sg_rule_all_out" {
   group     = ibm_is_security_group.vpc_vpc_sg1_sg.id
-  remote    = "0.0.0.0/8"
+  remote    = "0.0.0.0/0"
   direction = "outbound"
 }
 
