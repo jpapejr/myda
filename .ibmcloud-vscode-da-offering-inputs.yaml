@@ -34,11 +34,22 @@
 # templateValues: Contains the inputs and outputs of the Terraform template. Inputs be edited and will be sent when validating the DA on IBM Cloud.
 
 repository:
-  releaseName: 'my-da_0.0.1'
-  repositoryRemote: 'origin'
+  releaseName: my-da_0.0.1
+  repositoryRemote: origin
 catalog:
-  privateCatalogName: 'my-private-catalog'
-  privateCatalogDescription: 'Created by EPX VS Code Extension POC'
-  offeringTargetVersion: '0.0.1'
-  devVersionId: ''
-  publishedVersionId: ''
+  privateCatalogName: my-private-catalog
+  privateCatalogDescription: Created by EPX VS Code Extension POC
+  offeringTargetVersion: 0.0.1
+  catalogId: ""
+  offeringId: ""
+  devVersionId: ""
+  publishedVersionId: ""
+schematics:
+  schematicsWorkspaceId: ""
+projects:
+  projectName: epx-test-1
+  projectId: e69f8062-a39e-4bf7-bed2-cc03546fef20
+  resourceGroupId: 67e4df7a8dc442d49a0ce2a3ec4fb25a
+  configId: ""
+  configName: ""
+templateValues: {}
