@@ -1,0 +1,44 @@
+# This file provides input values for creating and validating a Deployable Architecture (DA) offering in an IBM Cloud private catalog.
+# This is used in combination with the generated catalog manifest JSON file, ibm_catalog.json.
+# After the properties are updated, right-click on this file to create a DA offering in a private catalog without going through the interactive prompts.
+
+# IMPORTANT: This file will be modified automatically. Property values may be overriden and additional user-provided comments will be lost.
+
+# #############################
+# Repository-related properties
+# -----------------------------
+# repository.releaseName: The name of the remote repository release that will contain the catalog manifest and related files. A development branch with a prefix dev/ will also be created.
+# repository.repositoryRemote: The name of the remote where the branch will be pushed.
+
+# ##########################
+# Catalog-related properties
+# --------------------------
+# catalog.privateCatalogName: The name of the private catalog where the offering will be added. If an existing catalog with the same name does not exist, it will be created.
+# catalog.privateCatalogDescription: A description to be used when creating a new catalog.
+# catalog.offeringTargetVersion: The version of the offering that will be added. If an existing version of the same install kind already exists, an error will be thrown.
+# devVersionId: When validating a DA, the locator ID of the DA offering in the private catalog.
+# publishedVersionId: When sharing a DA, the locator ID of the DA offering made from a release.
+
+# ###########################
+# Projects-related properties
+# ---------------------------
+# projectName: The name of the project used for DA validation.
+# projectId: The ID of the project used for DA validation.
+# resourceGroupId: The ID of the resource group of the project used for DA validation.
+# configId: The ID of the project configuration used for DA validation.
+# configName: The name of the project configuration used for DA validation.
+
+# ###########################
+# Template-related properties
+# ---------------------------
+# templateValues: Contains the inputs and outputs of the Terraform template. Inputs be edited and will be sent when validating the DA on IBM Cloud.
+
+repository:
+  releaseName: 'my-da_0.0.1'
+  repositoryRemote: 'origin'
+catalog:
+  privateCatalogName: 'my-private-catalog'
+  privateCatalogDescription: 'Created by EPX VS Code Extension POC'
+  offeringTargetVersion: '0.0.1'
+  devVersionId: ''
+  publishedVersionId: ''
